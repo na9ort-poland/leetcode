@@ -2,7 +2,6 @@ package org.techideas.leetcode;
 
 import org.techideas.leetcode.model.ListNode;
 
-import java.util.Optional;
 
 class Solution {
 
