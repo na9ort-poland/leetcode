@@ -9,7 +9,7 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
 
 public class SolutionTest {
 
-    Solution solution;
+    final Solution solution = new Solution();
 
     //Input: l1 = [2,4,3], l2 = [5,6,4]
     //Output: [7,0,8]
