@@ -1,5 +1,8 @@
 # Add Two Numbers
 
+## Status
+$${\color{red}Accepted}$$
+
 ## The link
 - https://leetcode.com/problems/add-two-numbers/description/
 

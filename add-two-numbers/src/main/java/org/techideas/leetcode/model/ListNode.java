@@ -14,7 +14,7 @@ public class ListNode {
         this.val = val;
     }
 
-    ListNode(Integer val, ListNode next) {
+    public ListNode(Integer val, ListNode next) {
         this.val = val;
         this.next = next;
     }

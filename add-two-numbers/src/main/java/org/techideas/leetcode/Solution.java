@@ -17,6 +17,7 @@ class Solution {
             var cell = l1Optional.orElse(new ListNode(0)).val
                     + l2Optional.orElse(new ListNode(0)).val
                     + saveDecade;
+            saveDecade = 0;
             if (cell > 9) {
                 cell -= 10;
                 saveDecade = 1;
@@ -32,6 +33,10 @@ class Solution {
 
             l1Optional = l1Optional.map(listNode -> listNode.next);
             l2Optional = l2Optional.map(listNode -> listNode.next);
+        }
+
+        if (saveDecade != 0) {
+            listNodeSum.next = new ListNode(saveDecade, null);
         }
 
         return head;
