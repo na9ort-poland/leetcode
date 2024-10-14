@@ -5,17 +5,15 @@ import org.techideas.leetcode.model.ListNode;
 import java.util.Optional;
 
 class Solution {
-    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
-        var l1Optional = Optional.ofNullable(l1);
-        var l2Optional = Optional.ofNullable(l2);
 
+    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {
         var head = new ListNode();
         var listNodeSum = head;
         int saveDecade = 0;
 
-        while (l1Optional.isPresent() || l2Optional.isPresent()) {
-            var cell = l1Optional.orElse(new ListNode(0)).val
-                    + l2Optional.orElse(new ListNode(0)).val
+        while (l1 != null || l2 != null) {
+            var cell = (l1 != null ? l1.val : 0)
+                    + (l2 != null ? l2.val : 0)
                     + saveDecade;
             saveDecade = 0;
             if (cell > 9) {
@@ -24,15 +22,16 @@ class Solution {
             }
 
             listNodeSum.val = cell;
-            listNodeSum.next = isNeededToCreateOneMoreNewListNode(l1Optional, l2Optional) ? new ListNode() : null;
+            listNodeSum.next = (l1 != null && l1.next != null) || (l2 != null && l2.next != null)
+                    ? new ListNode() : null;
             if (listNodeSum.next == null) {
                 break;
             }
 
             listNodeSum = listNodeSum.next;
 
-            l1Optional = l1Optional.map(listNode -> listNode.next);
-            l2Optional = l2Optional.map(listNode -> listNode.next);
+            l1 = l1 != null ? l1.next : null;
+            l2 = l2 != null ? l2.next : null;
         }
 
         if (saveDecade != 0) {
@@ -40,10 +39,5 @@ class Solution {
         }
 
         return head;
-    }
-
-    private boolean isNeededToCreateOneMoreNewListNode(Optional<ListNode> l1Optional, Optional<ListNode> l2Optional) {
-        return (l1Optional.isPresent() && l1Optional.get().next != null)
-                || (l2Optional.isPresent() && l2Optional.get().next != null);
     }
 }
