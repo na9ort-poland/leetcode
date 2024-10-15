@@ -1,7 +1,8 @@
-package org.techideas.leetcode;
+package org.techideas.leetcode.add2numbers;
 
+import org.assertj.core.api.AssertionsForClassTypes;
 import org.junit.jupiter.api.Test;
-import org.techideas.leetcode.model.ListNode;
+import org.techideas.leetcode.add2numbers.model.ListNode;
 
 import java.util.List;
 
@@ -25,7 +26,7 @@ public class SolutionTest {
         var listNodeSum = solution.addTwoNumbers(listNode1, listNode2);
 
         //then
-        assertThat(listNodeSum.getWholeList()).isEqualTo(expectedList);
+        AssertionsForClassTypes.assertThat(listNodeSum.getWholeList()).isEqualTo(expectedList);
     }
 
     //Input: l1 = [0], l2 = [0]
@@ -41,7 +42,7 @@ public class SolutionTest {
         var listNodeSum = solution.addTwoNumbers(listNode1, listNode2);
 
         //then
-        assertThat(listNodeSum.getWholeList()).isEqualTo(expectedList);
+        AssertionsForClassTypes.assertThat(listNodeSum.getWholeList()).isEqualTo(expectedList);
     }
 
     //Input: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]
@@ -57,6 +58,6 @@ public class SolutionTest {
         var listNodeSum = solution.addTwoNumbers(listNode1, listNode2);
 
         //then
-        assertThat(listNodeSum.getWholeList()).isEqualTo(expectedList);
+        AssertionsForClassTypes.assertThat(listNodeSum.getWholeList()).isEqualTo(expectedList);
     }
 }

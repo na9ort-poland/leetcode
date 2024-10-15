@@ -1,4 +1,4 @@
-package org.techideas.leetcode.model;
+package org.techideas.leetcode.add2numbers.model;
 
 import java.util.LinkedList;
 import java.util.List;

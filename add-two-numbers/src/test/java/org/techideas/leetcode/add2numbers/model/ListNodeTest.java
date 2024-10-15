@@ -1,4 +1,4 @@
-package org.techideas.leetcode.model;
+package org.techideas.leetcode.add2numbers.model;
 
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;

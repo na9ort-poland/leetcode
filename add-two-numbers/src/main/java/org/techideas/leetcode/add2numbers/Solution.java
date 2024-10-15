@@ -1,6 +1,6 @@
-package org.techideas.leetcode;
+package org.techideas.leetcode.add2numbers;
 
-import org.techideas.leetcode.model.ListNode;
+import org.techideas.leetcode.add2numbers.model.ListNode;
 
 
 class Solution {
