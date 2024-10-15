@@ -6,8 +6,6 @@ import org.techideas.leetcode.add2numbers.model.ListNode;
 
 import java.util.List;
 
-import static org.assertj.core.api.AssertionsForClassTypes.assertThat;
-
 public class SolutionTest {
 
     final Solution solution = new Solution();
