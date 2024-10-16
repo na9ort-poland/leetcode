@@ -3,16 +3,16 @@ package org.techideas.leetcode.substring;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.techideas.leetcode.substring.impl.StartingFromEveryIndexSolution;
+import org.techideas.leetcode.substring.impl.SlidingWindowOfDistinctCharactersSolution;
 
 import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
 
-public class SolutionTest {
+public class SlidingWindowOfDistinctCharactersSolutionTest {
 
-    Solution solution = new StartingFromEveryIndexSolution();
+    Solution solution = new SlidingWindowOfDistinctCharactersSolution();
 
     @ParameterizedTest
     @MethodSource(value = "providerForShouldReturnLengthOfTheLongestSubstring")

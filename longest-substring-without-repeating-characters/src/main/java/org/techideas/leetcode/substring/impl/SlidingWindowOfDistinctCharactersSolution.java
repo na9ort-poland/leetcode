@@ -6,6 +6,12 @@ public class SlidingWindowOfDistinctCharactersSolution implements Solution {
 
     @Override
     public int lengthOfLongestSubstring(String s) {
+//        if (s.length() < 2) {
+//            return s.length();
+//        }
+
+
+
         return 0;
     }
 }
