@@ -3,6 +3,7 @@ package org.techideas.leetcode.substring;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.techideas.leetcode.substring.impl.StartingFromEveryIndexSolution;
 
 import java.util.stream.Stream;
 
@@ -11,11 +12,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class SolutionTest {
 
-    Solution solution = new Solution();
+    Solution solution = new StartingFromEveryIndexSolution();
 
     @ParameterizedTest
-    @MethodSource(value = "providerForShouldReturnTheLongestSubstring")
-    void shouldReturnTheLongestSubstring(String input, int expectedLength) {
+    @MethodSource(value = "providerForShouldReturnLengthOfTheLongestSubstring")
+    void shouldReturnLengthOfTheLongestSubstring(String input, int expectedLength) {
         //given && when
         var length = solution.lengthOfLongestSubstring(input);
 
@@ -23,7 +24,7 @@ public class SolutionTest {
         assertThat(length).isEqualTo(expectedLength);
     }
 
-    private static Stream<Arguments> providerForShouldReturnTheLongestSubstring() {
+    private static Stream<Arguments> providerForShouldReturnLengthOfTheLongestSubstring() {
         return Stream.of(
                 //Explanation: The answer is "abc", with the length of 3.
                 Arguments.of("abcabcbb", 3),
