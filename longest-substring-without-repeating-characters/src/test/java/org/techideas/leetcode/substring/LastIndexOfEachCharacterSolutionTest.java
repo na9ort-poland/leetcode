@@ -38,7 +38,8 @@ public class LastIndexOfEachCharacterSolutionTest {
 
                 //LeetCode Validation Tests
                 Arguments.of(" ", 1),
-                Arguments.of("au", 2)
+                Arguments.of("au", 2),
+                Arguments.of("dvdf", 3)
         );
     }
 }
