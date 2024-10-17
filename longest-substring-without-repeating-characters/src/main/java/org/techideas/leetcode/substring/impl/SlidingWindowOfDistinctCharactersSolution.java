@@ -8,27 +8,28 @@ public class SlidingWindowOfDistinctCharactersSolution implements Solution {
 
     @Override
     public int lengthOfLongestSubstring(String s) {
+        if (s.length() < 2) {
+            return s.length();
+        }
+
         char[] chars = s.toCharArray();
         var startIndex = 0;
-        var endIndex = 1;
+        var endIndex = 0;
         var lengthOfTheLongestSubstring = 0;
         var set = new HashSet<Character>();
 
-        set.add(chars[startIndex]);
-
         while (endIndex < chars.length) {
-            System.out.printf("=====\nstartIndex = %d\nendIndex = %d\n=====%n", startIndex, endIndex);
             if (set.contains(chars[endIndex])) {
+                set.remove(chars[startIndex]);
                 ++startIndex;
-                set.remove(chars[endIndex]);
                 continue;
             }
 
-            lengthOfTheLongestSubstring = Math.max(endIndex - startIndex, lengthOfTheLongestSubstring);
+            lengthOfTheLongestSubstring = Math.max(endIndex - startIndex + 1, lengthOfTheLongestSubstring);
             set.add(chars[endIndex]);
             ++endIndex;
         }
 
-        return lengthOfTheLongestSubstring + 1;
+        return lengthOfTheLongestSubstring;
     }
 }
