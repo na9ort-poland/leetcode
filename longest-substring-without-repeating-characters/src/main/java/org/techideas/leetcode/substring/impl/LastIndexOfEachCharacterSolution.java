@@ -4,6 +4,8 @@ import org.techideas.leetcode.substring.Solution;
 
 public class LastIndexOfEachCharacterSolution implements Solution {
 
+
+
     @Override
     public int lengthOfLongestSubstring(String s) {
         if (s.length() < 2) {
