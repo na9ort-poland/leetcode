@@ -1,7 +1,7 @@
 # Median of Two Sorted Arrays
 
-## Status
-$${\color{yellow}In Progress}$$
+Status: In Progress
+Difficulty: Hard
 
 ## The link
 - https://leetcode.com/problems/median-of-two-sorted-arrays/description/
