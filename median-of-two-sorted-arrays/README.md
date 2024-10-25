@@ -1,6 +1,6 @@
 # Median of Two Sorted Arrays
 
-Status: In Progress \
+Status: Accepted \
 Difficulty: Hard
 
 ## The link
