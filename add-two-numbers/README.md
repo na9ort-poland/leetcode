@@ -1,7 +1,7 @@
 # Add Two Numbers
 
-## Status
-$${\color{green}Accepted}$$
+Status: Accepted \
+Difficulty: Medium
 
 ## The link
 - https://leetcode.com/problems/add-two-numbers/description/

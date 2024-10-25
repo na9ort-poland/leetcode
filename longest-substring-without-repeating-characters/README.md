@@ -1,7 +1,7 @@
 # Longest Substring Without Repeating Characters
 
-## Status
-$${\color{green}Accepted}$$
+Status: Accepted \
+Difficulty: Medium
 
 ## The link
 - https://leetcode.com/problems/longest-substring-without-repeating-characters/description/
