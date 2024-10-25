@@ -3,14 +3,15 @@ package org.techideas.leetcode.median;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
+import org.techideas.leetcode.median.impl.DirectTrivialSolution;
 
 import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-public class SolutionTest {
+public class DirectTrivialSolutionTest {
 
-    Solution solution = new Solution();
+    Solution solution = new DirectTrivialSolution();
 
     @ParameterizedTest
     @MethodSource("providerForShouldReturnsProperMedianValueOfTwoMergedArrays")
