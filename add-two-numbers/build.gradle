@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'org.techideas.leetcode.add2numbers'
-version = '1.0-SNAPSHOT'
+version = '1.0'
 
 repositories {
     mavenCentral()
