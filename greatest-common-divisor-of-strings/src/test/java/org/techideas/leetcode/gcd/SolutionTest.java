@@ -1,7 +1,9 @@
-package org.techideas.leetcode;
+package org.techideas.leetcode.gcd;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.techideas.leetcode.gcd.GCDApproachSolution;
+import org.techideas.leetcode.gcd.Solution;
 
 public class SolutionTest {
 

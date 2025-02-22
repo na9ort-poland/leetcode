@@ -1,4 +1,4 @@
-package org.techideas.leetcode;
+package org.techideas.leetcode.gcd;
 
 public class GCDApproachSolution implements Solution {
 

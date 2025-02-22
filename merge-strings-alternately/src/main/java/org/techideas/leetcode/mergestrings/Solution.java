@@ -1,4 +1,4 @@
-package org.techideas.leetcode;
+package org.techideas.leetcode.mergestrings;
 
 class Solution {
     public String mergeAlternately(String word1, String word2) {

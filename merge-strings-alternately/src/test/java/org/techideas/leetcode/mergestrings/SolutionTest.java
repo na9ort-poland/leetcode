@@ -1,7 +1,8 @@
-package org.techideas.leetcode;
+package org.techideas.leetcode.mergestrings;
 
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
+import org.techideas.leetcode.mergestrings.Solution;
 
 public class SolutionTest {
 

@@ -5,4 +5,5 @@ include 'longest-substring-without-repeating-characters'
 include 'median-of-two-sorted-arrays'
 include 'merge-strings-alternately'
 include 'greatest-common-divisor-of-strings'
+include 'kids-with-the-greatest-number-of-candies'
 
