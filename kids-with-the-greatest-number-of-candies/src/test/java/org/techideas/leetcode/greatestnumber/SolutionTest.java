@@ -12,7 +12,7 @@ public class SolutionTest {
     void example_1() {
         //given
         var candies = new int[]{2, 3, 5, 1, 3};
-        var extraCandies = 0;
+        var extraCandies = 3;
         var solution = new Solution();
 
         //when

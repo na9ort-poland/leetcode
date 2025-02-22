@@ -1,6 +1,6 @@
 # Kids With the Greatest Number of Candies
 
-Status: In Progress \
+Status: Done \
 Difficulty: Easy
 
 ## The link
