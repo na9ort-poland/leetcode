@@ -1,6 +1,6 @@
 # Can Place Flowers
 
-Status: In Progress \
+Status: Done \
 Difficulty: Easy
 
 ## The link
