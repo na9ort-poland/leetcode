@@ -1,6 +1,6 @@
 # Reverse Vowels of a String
 
-Status: In Progress \
+Status: Done \
 Difficulty: Easy
 
 ## The link
