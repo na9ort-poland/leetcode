@@ -16,4 +16,17 @@ public class SolutionTest {
         //then
         Assertions.assertEquals("AceCreIm", result);
     }
+
+    @Test
+    void example_2() {
+        //given
+        var s = "leetcode";
+        var solution = new Solution();
+
+        //when
+        var result = solution.reverseVowels(s);
+
+        //then
+        Assertions.assertEquals("leotcede", result);
+    }
 }

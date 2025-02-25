@@ -1,7 +1,7 @@
 # Merge Strings Alternately
 
 Status: Accepted \
-Difficulty: 
+Difficulty: Easy
 
 ## The link
 - https://leetcode.com/problems/merge-strings-alternately/description
