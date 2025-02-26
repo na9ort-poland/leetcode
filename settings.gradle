@@ -10,4 +10,6 @@ include 'can-place-flowers'
 include 'can-place-flowers:src:main:java:org:techideas:leetcode:reverse-vowels-of-a-string'
 findProject(':can-place-flowers:src:main:java:org:techideas:leetcode:reverse-vowels-of-a-string')?.name = 'reverse-vowels-of-a-string'
 include 'reverse-vowels-of-a-string'
+include 'reverse-words-in-a-string'
+include 'reverse-words-in-a-string'
 
