@@ -42,4 +42,30 @@ public class SolutionTest {
         //then
         Assertions.assertEquals("example good a", result);
     }
+
+    @Test
+    void example_4() {
+        //given
+        var s = "blue";
+        var solution = new Solution();
+
+        //when
+        var result = solution.reverseWords(s);
+
+        //then
+        Assertions.assertEquals("blue", result);
+    }
+
+    @Test
+    void example_5() {
+        //given
+        var s = " blue";
+        var solution = new Solution();
+
+        //when
+        var result = solution.reverseWords(s);
+
+        //then
+        Assertions.assertEquals("blue", result);
+    }
 }

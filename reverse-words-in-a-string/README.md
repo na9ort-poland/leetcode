@@ -1,6 +1,6 @@
 # Reverse Words in a String
 
-Status: In Progress \
+Status: Done \
 Difficulty: Medium
 
 ## The link
